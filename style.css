@@ -1,6 +1,3 @@
-@import url('https://fonts.cdnfonts.com/css/cocogoose');
-@import url('https://fonts.cdnfonts.com/css/Lato');
-
 html {
   background-color: #fff;
   font-family: 'Cocogoose', sans-serif;
@@ -18,62 +15,98 @@ body {
   box-sizing: inherit;
 }
 
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+li {
+  list-style: none;
+}
+
 h1 {
     font-size: 40px;
     margin-bottom: 12px;
     color: #ec5242;
   }
-
-@media screen and (max-width: 768px) {
+/*
+	@media screen and (max-width: 768px) { */
   .darkMenu {
     display: none;
   }
 
   .bigMenu {
-    display: none;
+    display: block;
   }
 
   .bigMenu ul {
+		width: 100vw;
+		height: 100vh;
+		background: #ec5242;
+		position: fixed;
+		top: 15%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+		align-items: center;
     list-style-type: none;
+		flex-direction: column;
     overflow: hidden;
-    padding-right: 150px;
+		margin: 0;
+		padding: 0;
+		display: none;
   }
 
   .bigMenu ul a {
-    display: none;
+    display: block;
+		margin: 10px auto;
   }
 
-  .logo {
+  .logo img {
     display: none;
   }
 
   .hamburger {
-    z-index: 100;
-    top: 1rem;
-    right: 1rem;
-    padding: 0;
+		width: 50px;
+		height: 50px;
+		margin: 10px;
     border: #fff;
     cursor: pointer;
     color: #000211;
-    background-color: inherit;
-  }
+		border: 1px solid black;
+	}
 
+	.menu {
+		border: 2px solid green;
+		background: green;
+		background: url('../menubutton.png');
+		width: 30px;
+		height: 30px;
+	}
+
+	.close {
+		border: 2px solid red;
+		padding: 10px;
+		background: red;
+		background: url('../closing\ icon.png');
+		width: 30px;
+		height: 30px;
+	}
+
+/*
   .menuIcon {
     font-size: 40px;
     margin: 20px;
+		display: block;
   }
-
   .closeIcon {
     display: none;
   }
-
+*/
   .containerOne {
     background-image: url('../img/desktop.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 1200px;
+    height: auto;
     width: 100%;
     margin-bottom: 12px;
   }
@@ -126,6 +159,7 @@ h1 {
   .programs {
     background-image: url('../img/programs.jpg');
     padding-bottom: 12px;
+		background: black;
   }
 
   .programs h2 {
@@ -145,6 +179,7 @@ h1 {
   .programCards {
     background-image: url(../img/program-card.jpg);
     background-repeat: repeat-x;
+		background: #272a31;
     margin: 15px 15px 0 15px;
     padding: 5px;
     display: grid;
@@ -298,7 +333,7 @@ h1 {
     background: #000;
     height: 300px;
   }
-}
+
 
 @media screen and (min-width: 768px) {
     .smallMenu {
@@ -309,13 +344,14 @@ h1 {
     }
   
     .darkMenu {
-      list-style-type: none;
       width: 100%;
+      height: 40px;
       display: flex;
       justify-content: flex-end;
       flex-direction: row;
+      padding: 0;
+      margin: 0;
       padding-right: 135px;
-      padding-top: 5px;
     }
   
     .social {
@@ -341,15 +377,20 @@ h1 {
   
     .bigMenu {
       display: block;
-      background-color: #fff;
+    }
+
+    .bigMenu button {
+      display: none;
     }
   
     .bigMenu ul {
+      background: #070707;
       display: flex;
+      flex-direction: row;
       justify-content: flex-end;
-      list-style-type: none;
       overflow: hidden;
-      padding-right: 150px;
+      width: 100vw;
+      height: 60px;
     }
   
     .bigMenu ul a {
@@ -398,7 +439,7 @@ h1 {
       display: flex;
       flex-direction: column;
       padding: 50px 150px;
-      margin-bottom: 6px;
+      margin: 0;
     }
   
     .imageDiv h5 {

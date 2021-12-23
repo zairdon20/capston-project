@@ -27,10 +27,11 @@
       </ul>
     </nav>
     <nav class="bigMenu">
-      <ul>
-       <li><a class="logo" href="#"
-          ><img src="assets/img/coincity.png" alt="Logo image"
-        /></a></li> 
+			<button class="hamburger" type="button" id="menu-btn">
+				<span class="menu icon" id="icon"></span>
+			 </button>
+      <ul id="nav-element">
+       <li><a class="logo" href="#"><img src="assets/img/coincity.png" alt="Logo image"/></a></li> 
         <li><a href="index.html">Home</a></li>
         <li><a href="#">Program</a></li>
         <li><a href="about.html">About</a></li>
@@ -40,10 +41,6 @@
       </ul>
     </nav>
     <section class="containerOne">
-      <button class="hamburger" type="button">
-        <i class="menuIcon material-icons">menu</i>
-        <i class="closeIcon material-icons">close</i>
-      </button>
       <div class="imageDiv">
         <h3>"Hello!Sharing World"</h3>
         <h1>Creative commons <br> Summit<br>2015</h1>
@@ -108,8 +105,9 @@
     <section class="speakers">
       <h2>Featured Speakers</h2>
       <hr class="programLine" />
-      <div class="speakersContainer">
-        <div class="speakersGrid">
+			</div>
+      <div class="speakersContainer" id="container">
+        <!--<div class="speakersGrid">
           <div class="gridImage">
             <img src="../img/speaker1.jpeg" alt="Nolan's Portrait" />
           </div>
@@ -212,7 +210,7 @@
             </p>
           </div>
         </div>
-      </div>
+      </div>-->
     </section>
     <section class="partners">
       <div class="partnersContainer">
@@ -224,7 +222,7 @@
         <div class="partnersMain">
           <div class="partnersItem">
             <img
-              src="./assets/img/OpenAI.png"
+              src="../img/nations-2022429_640.png"
               width="250"
               height="70"
               alt="Open AI"
@@ -233,7 +231,7 @@
           </div>
           <div class="partnersItem">
             <img
-              src="./assets/img/gitlab.png"
+              src="../img/intel logo.png"
               width="280"
               height="100"
               alt="Gitlab"
@@ -267,7 +265,7 @@
           <a href="#">
             <img
               class="logoFooter"
-              src="./assets/img/coincity.png"
+              src="../img/eye-safety-.jpg"
               alt="coincity Logo"
             />
           </a>
@@ -277,5 +275,7 @@
         </div>
       </div>
     </footer>
+
+		<script src="./main.js"></script>
   </body>
 </html>
