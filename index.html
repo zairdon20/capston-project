@@ -20,8 +20,8 @@
     <header>
       <nav class="smallMenu">
         <ul class="darkMenu">
-          <li><a href="#"><img class="facebook" src="../img/facebook-circular-logo.png" alt="icone"/></a></li>
-          <li><a href="#"><img class="facebook" src="../img/twitter (1).png" alt="icone"/></a></li>
+          <li><a href="#"><img class="facebook" src="./imgs/facebook-logo.png" alt="icone"/></a></li>
+          <li><a href="#"><img class="facebook" src="./imgs/twitter.png" alt="icone"/></a></li>
           <li><a href="#">English</a></li>
           <li><a href="#">My Profile</a></li>
           <li><a href="#">Logout</a></li>
@@ -29,17 +29,32 @@
       </nav>
       <nav class="bigMenu">
         <button class="hamburger" type="button">
-          <span class="menu icon" id="icon"></span>
+          <span class="menu icon" id="icon">
+            <img onclick="openMenu()" class="showMenu" src="./imgs/menu.png" alt="menu">
+          </span>
          </button>
         <ul class="nav-element">
          <li><a class="logo" href="#"><img src="assets/img/coincity.png" alt="Logo image"/></a></li> 
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index1.html">Program</a></li>
+          <li><a  href="index.html">Home</a></li>
+          <li><a href="#">Program</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#">Sponsor</a></li>
           <li><a href="#">News</a></li>
           <li><a class="webinar" href="#">Webinar</a></li>
+          <li><img onclick="closeMenu()" class="showMenu close_btn" src="./imgs/close.png" alt=""></li>
         </ul>
+      </nav>
+      <nav class="desktop_navbar">
+        <img  class="header_logo" src="./imgs/brain.png" alt="brain">
+        <ul class="navbar_lst">
+           <li><a href="index.html">Home</a></li>
+           <li><a href="#">Program</a></li>
+           <li><a href="about.html">About</a></li>
+           <li><a href="#">Sponsor</a></li>
+           <li><a href="#">News</a></li>
+         </ul>
+         <a class="webinar_btn" href="#">Webinar</a>
+      </nav>
       </nav>
     </header>
     <section class="containerOne">

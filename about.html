@@ -19,8 +19,8 @@
   <header>
     <nav class="smallMenu">
       <ul class="darkMenu">
-        <li><a href="#"><img class="facebook" src="../img/facebook-circular-logo.png" alt="icone"/></a></li>
-        <li><a href="#"><img class="facebook" src="../img/twitter (1).png" alt="icone"/></a></li>
+        <li><a href="#"><img class="facebook" src="./imgs/facebook-logo.png" alt="icone"/></a></li>
+        <li><a href="#"><img class="facebook" src="./imgs/twitter.png" alt="icone"/></a></li>
         <li><a href="#">English</a></li>
         <li><a href="#">My Profile</a></li>
         <li><a href="#">Logout</a></li>
@@ -28,17 +28,31 @@
     </nav>
     <nav class="bigMenu">
       <button class="hamburger" type="button">
-        <span class="menu icon" id="icon"></span>
+        <span class="menu icon" id="icon">
+          <img onclick="openMenu()" class="showMenu" src="./imgs/menu.png" alt="menu">
+        </span>
        </button>
       <ul class="nav-element">
        <li><a class="logo" href="#"><img src="assets/img/coincity.png" alt="Logo image"/></a></li> 
-        <li><a href="index.html">Home</a></li>
+        <li><a  href="index.html">Home</a></li>
         <li><a href="#">Program</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="#">Sponsor</a></li>
         <li><a href="#">News</a></li>
         <li><a class="webinar" href="#">Webinar</a></li>
+        <li><img onclick="closeMenu()" class="showMenu close_btn" src="./imgs/close.png" alt=""></li>
       </ul>
+    </nav>
+    <nav class="desktop_navbar">
+      <img  class="header_logo" src="./imgs/brain.png" alt="brain">
+      <ul class="navbar_lst">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="#">Program</a></li>
+         <li><a href="about.html">About</a></li>
+         <li><a href="#">Sponsor</a></li>
+         <li><a href="#">News</a></li>
+       </ul>
+       <a class="webinar_btn" href="#">Webinar</a>
     </nav>
   </header>
   <section class="containerOne">
@@ -61,45 +75,42 @@
       <h2 class="logo-header">Consciousness Explained Global conference 2025 Logo</h2>
       <hr class="program-line red">
       </hr>
-      <p>The logo of CE conference 2025 was decided through the logo competition from 8.june to 7.july</p>
+      <p class="text_logo">The logo of CE conference 2025 was decided through the logo competition from 8.june to 7.july</p>
     </div>
     <div class="brain">
-      <h3>Human Consciousness</h3>
       <img class="brain_img" src="./imgs/brain.png" alt="brain">
+      <h3 class="logo_name">Human <br> Consciousness</h3>
     </div>
   </section>
 
-  <section class="speakers d-flex">
+  <section class="speakers">
     <h2 class="program-head logo-header fs">See the Past CE conference</h2>
     <hr class="program-line red fs-li">
-    </hr>
-    <p>Take a look at the two CE conference wich took place in Mexico</p>
+    <p class="text_conference">Take a look at the two CE conference wich took place in Mexico</p>
     <div class="meeting">
       <div class="events">
-        <div class="text"> 2020<br>France</div>
+        <div class="text_event"> 2020<br>France</div>
       </div>
       <div class="events">
-
-        <div class="text">2024<br>Egypt</div>
+        <div class="text_event">2024<br>Egypt</div>
       </div>
     </div>
   </section>
   <section class="partner-bg">
     <div class="partner">
-      <h5 class="program-head">Partners</h5>
+      <h5 class="program-head-PARTNER">Partners</h5>
       <div class="program-line red"></div>
     </div>
     <ul class="partner-li">
-      <li> <img class="logo2" src="../img/intel logo.png" alt=""></li>
-      <li> <img class="logo2" src="../img/twitter-2430933_640.png" alt=""></li>
-      <li> <img class="logo2" src="../img/nations-2022429_640.png" alt=""></li>
+      <li> <img class="logo2" src="./imgs/intel.png" alt=""></li>
+      <li> <img class="logo2" src="./imgs/twitter_.png" alt=""></li>
+      <li> <img class="logo2" src="./imgs/united-nations.png" alt=""></li>
     </ul>
   </section>
   <footer class="footer">
-    <img class="logo3" src="../img/twitter-2430933_640.png" alt="">
-    <div>
-      <p>Consciousness Explained Conference</p>
-      <p><i class="fa fa-copyright" aria-hidden="true"></i>2021.All rights reserved</p>
+    <div class="footer_wrap">
+      <p class="footer_txt">Consciousness <br> Explained Conference</p>
+      <p class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i>2021.All rights reserved</p>
     </div>
   </footer>
 
