@@ -1,4 +1,4 @@
-const speakerData = [
+/*const speakerData = [
     {
       img: 'https://neveralonesummit.live/wp-content/uploads/2018/12/deepak_chopra.jpg',
       name: 'Deepak Chopra, MD',

@@ -27,7 +27,7 @@ h1 {
     color: #ec5242;
   }
 /*
-	@media screen and (max-width: 768px) { */
+	@media screen and (max-width: 768px) { 
   .darkMenu {
     display: none;
   }
@@ -93,7 +93,7 @@ h1 {
     display: flex;
     justify-content: center;
 	}
-
+*/
 /*
   .menuIcon {
     font-size: 40px;
@@ -336,12 +336,12 @@ h1 {
 
 
 @media screen and (min-width: 768px) {
-    .smallMenu {
+   /* .smallMenu {
       background-color: #272a31;
       margin: 0;
       padding: 0;
       height: 30px;
-      /* background: url('../img/facebook-circular-logo.png') no-repeat; */
+      /* background: url('../img/facebook-circular-logo.png') no-repeat; 
     }
    
     .darkMenu {
@@ -430,7 +430,7 @@ h1 {
       margin: 0;
       margin-right: 600px;
     }  
-  
+  */
     .containerOne {
       background: url('./background.png');
       height: 800px;
