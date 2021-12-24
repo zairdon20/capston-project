@@ -1,18 +1,14 @@
-html {
-  background-color: #fff;
-  font-family: 'Cocogoose', sans-serif;
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Cocogoose', sans-serif;
 }
 
 a {
@@ -45,7 +41,7 @@ h1 {
 		background: #ec5242;
 		position: fixed;
 		top: 15%;
-    display: flex;
+    display: none;
     justify-content: center;
 		align-items: center;
     list-style-type: none;
@@ -53,7 +49,6 @@ h1 {
     overflow: hidden;
 		margin: 0;
 		padding: 0;
-		display: none;
   }
 
   .bigMenu ul a {
@@ -72,22 +67,20 @@ h1 {
     border: #fff;
     cursor: pointer;
     color: #000211;
+    background: transparent;
 		border: 1px solid black;
 	}
 
 	.menu {
-		border: 2px solid green;
-		background: green;
-		background: url('../menubutton.png');
+		background: url('./background.png');
+    padding: 50px;
 		width: 30px;
 		height: 30px;
 	}
 
 	.close {
-		border: 2px solid red;
-		padding: 10px;
-		background: red;
-		background: url('../closing\ icon.png');
+		padding: 50px;
+		background: url('./app_screenshot.png');
 		width: 30px;
 		height: 30px;
 	}
@@ -103,10 +96,8 @@ h1 {
   }
 */
   .containerOne {
-    background-image: url('../img/desktop.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: auto;
+    background: url('./background.png');
+    height: 500px;
     width: 100%;
     margin-bottom: 12px;
   }
@@ -366,7 +357,8 @@ h1 {
     }
   
     .darkMenu li {
-      margin-right: 15px;
+      margin: 0 10px;
+      padding:0;
     }
   
     .darkMenu li a {
@@ -374,23 +366,28 @@ h1 {
       text-decoration: none;
       font-size: 10px;
     }
+
+    .hamburger {
+      display: none;
+    }
   
     .bigMenu {
       display: block;
-    }
-
-    .bigMenu button {
-      display: none;
+      width: 100%;
+      height: 60px;
     }
   
     .bigMenu ul {
       background: #070707;
       display: flex;
       flex-direction: row;
-      justify-content: flex-end;
-      overflow: hidden;
-      width: 100vw;
+      justify-content: center;
+      margin-left: 40px;
       height: 60px;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      position: static;
     }
   
     .bigMenu ul a {
@@ -413,24 +410,16 @@ h1 {
       border-radius: 5px;
     }
   
-    .logo {
-      display: block;
-      margin-right: 550px;
-    }
-  
     .logo img {
+      display: block;
       height: 30px;
       width: auto;
-    }
-  
-    .hamburger {
-      display: none;
-    }
+      margin: 0;
+      margin-right: 600px;
+    }  
   
     .containerOne {
-      background-image: url('../img/header.png');
-      background-size: cover;
-      background-repeat: no-repeat;
+      background: url('./background.png');
       height: 800px;
       width: 100%;
     }

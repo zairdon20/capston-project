@@ -60,11 +60,11 @@ const speakerData = [
   
   /* MENU */
   
-  const btn = document.getElementById('menu-btn');
+  const btn = document.querySelector('.hamburger');
   
   const icon = document.querySelector('.icon');
   
-  const navElements = document.getElementById('nav-element');
+  const navElements = document.querySelector('.nav-element');
   
   btn.addEventListener('click', displayMenu);
   
