@@ -7,10 +7,9 @@
   padding: 0;
 }
 
-
 body {
-  background-color: url('./background.png');
-  font-family: 'Cocogoose', sans-serif;
+  /* background-color: url('./background.png');
+  font-family: 'Cocogoose', sans-serif; */
 }
 
 a {
@@ -38,10 +37,9 @@ h1 {
   }
 
   .logo{
-   height: 50vh;
-   background-color: grey;
-
+   height: auto;
   }
+
 
   .partner-li {
     display: flex;
@@ -49,7 +47,8 @@ h1 {
     align-items: center;
     justify-content: center;
   }
-/*
+
+
 .darkMenu {
     display: none;
   }
@@ -108,34 +107,76 @@ h1 {
 		background: url('../closing\ icon.png');
 		width: 30px;
 		height: 30px;
-	} */
+	}
 
   /* SECTION */
 
   .containerOne {
-    /* background-image: url('../img/desktop.jpg'); */
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
-    height: 50vh;
+    background-image: url('../img/desktop.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
-    margin-bottom: 12px;
-    background-color: violet;
-  }
-
-  .imageDiv {
-    background-color: violet;
+    margin: 0;
+    
   }
 
   .about-box {
-    font-size: 15px;
-  
+    font-size: 10px;
+    border: 2px #d3d3d3 solid;
+    background-color: #fff;
   }
 
   .speakers {
     background-color: yellow;
     height: 50vh;
   }
-/*
+
+  .email-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+  }
+
+  .please {
+    margin: 10px auto;
+    text-align: center;
+  }
+
+.logo {
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      padding-bottom: 50px;
+      border-bottom: 1px solid #d3d3d3;
+    }
+
+    .logo-header {
+      font-size: 2rem;
+      margin: 50px auto 10px auto;
+    }
+
+    .program-line {
+      width: 40px;
+      border: none;
+      border-top: 2px solid #ec5242;
+      margin: 1px auto;
+    }
+
+    .logo p {
+      text-align: center;
+      margin: 30px auto;
+    }
+
+  .brain {
+    border: 5px #d3d3d3 solid;
+    height: 100px;
+  }
+
   .imageDiv h3,
   h1 {
     color: #ec5242;
@@ -353,12 +394,12 @@ h1 {
   .aboutFooter {
     background: #000;
     height: 300px;
-  }*/
+  }
 
 
 @media screen and (min-width: 768px) {
  
-  /*  .smallMenu {
+   .smallMenu {
       background-color: #272a31;
       margin: 0;
       padding: 0;
@@ -434,7 +475,7 @@ h1 {
     .bigMenu ul a:hover {
       color: #ec5242;
     }
-  */
+ 
     .webinar {
       border: solid #d84d40;
       border-width: 5px;
@@ -452,7 +493,7 @@ h1 {
       background-image: url('./background.png');
       background-size: cover;
       background-repeat: no-repeat;
-      height: 600px;
+      height: auto;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -517,11 +558,11 @@ h1 {
       margin: 30px auto;
     }
 
-    .brain img {
+    /* .brain img {
       width: 400px;
       height: 150px;
       border: 1px solid #d3d3d3;
-    }
+    } */
 
     /* SPEAKER SECTION */
 

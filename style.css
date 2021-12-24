@@ -7,9 +7,9 @@
 }
 
 body {
-  background-color: #fff;
+  /* background-color: #fff; */
   font-family: 'Cocogoose', sans-serif;
-  background: url('./background.png') no-repeat;
+  /* background: url('./background.png') no-repeat; */
 }
 
 a {
@@ -106,7 +106,7 @@ h1 {
 */
   .containerOne {
     background: url('./background.png');
-    height: 500px;
+    height: auto;
     width: 100%;
     margin-bottom: 12px;
   }
@@ -213,8 +213,6 @@ h1 {
     background: #ec5242;
     text-align: center;
     padding-top: 1px;
-    width: 500px;
-    margin-left: 35%;
   }
 
   .allPrograms h3 {
@@ -538,6 +536,7 @@ h1 {
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin: 0 0 30px 0;
     }
     .programs {
       background: #000;
