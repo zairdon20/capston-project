@@ -103,9 +103,8 @@ header {
 }
 
 .close_btn {
-  position: relative;
-  bottom: 360px;
-  left: 340px;
+  margin-left: 50px;
+  margin-top: 20px;
 }
 
 .desktop_navbar {
@@ -256,7 +255,7 @@ header {
 
 .partner-bg {
   background-color: #424141;
-  height: 25vh;
+  height: auto;
 }
 
 .partner {
@@ -273,8 +272,9 @@ header {
 }
 
 .logo2 {
-  width: 70px;
-  margin-left: 40px;
+  width: 50px;
+  /* margin-left: 40px; */
+  margin: 20px 20px;
 }
 
 /* partner Section */
@@ -604,6 +604,12 @@ time {
     border: 3px #ec5242 solid;
     padding: 6px;
     margin: 0 40px 0 5%;
+  }
+
+  .logo2 {
+    width: 50px;
+    /* margin-left: 40px; */
+    margin: 20px 40px;
   }
 
   /* .bigMenu {
