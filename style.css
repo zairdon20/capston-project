@@ -9,6 +9,7 @@
 body {
   background-color: #fff;
   font-family: 'Cocogoose', sans-serif;
+  background: url('./background.png') no-repeat;
 }
 
 a {
@@ -34,7 +35,9 @@ h1 {
   .bigMenu {
     display: block;
   }
-
+  h1 {
+    text-transform: uppercase;
+  }
   .bigMenu ul {
 		width: 100vw;
 		height: 100vh;
@@ -66,23 +69,29 @@ h1 {
 		margin: 10px;
     border: #fff;
     cursor: pointer;
-    color: #000211;
     background: transparent;
-		border: 1px solid black;
 	}
 
 	.menu {
-		background: url('./background.png');
-    padding: 50px;
-		width: 30px;
+		background: url('../img/menu-button-of-three-horizontal-lines.png') no-repeat;
+    background-size: cover;
+    padding: 10px;
+	  border: 2px solid red;
+    width: 30px;
 		height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 	}
 
 	.close {
-		padding: 50px;
-		background: url('./app_screenshot.png');
+		padding: 10px;
+		background: url('../img/close-button.png');
 		width: 30px;
 		height: 30px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
 	}
 
 /*
@@ -204,6 +213,8 @@ h1 {
     background: #ec5242;
     text-align: center;
     padding-top: 1px;
+    width: 500px;
+    margin-left: 35%;
   }
 
   .allPrograms h3 {
@@ -332,19 +343,23 @@ h1 {
       margin: 0;
       padding: 0;
       height: 30px;
+      /* background: url('../img/facebook-circular-logo.png') no-repeat; */
     }
-  
+   
     .darkMenu {
       width: 100%;
       height: 40px;
       display: flex;
       justify-content: flex-end;
       flex-direction: row;
-      padding: 0;
+      padding: 10px;
       margin: 0;
-      padding-right: 135px;
+      padding-left: 135px;
+      align-items: center;
     }
-  
+    .facebook {
+      width: 25px;
+  }
     .social {
       font-size: 15px;
     }
@@ -518,6 +533,12 @@ h1 {
       width: 400px;
     }
   
+    .allPrograms {
+      background: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
     .programs {
       background: #000;
       padding-bottom: 12px;

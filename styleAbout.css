@@ -28,7 +28,27 @@ h1 {
     color: #ec5242;
   }
   
+  .logo2 {
+    width: 70px;
+    margin-left: 20px;
+  }
 
+  .logo3 { 
+    width: 60px;
+  }
+
+  .logo{
+   height: 50vh;
+   background-color: grey;
+
+  }
+
+  .partner-li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 /*
 .darkMenu {
     display: none;
@@ -93,16 +113,27 @@ h1 {
   /* SECTION */
 
   .containerOne {
-    background-image: url('../img/desktop.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: auto;
+    /* background-image: url('../img/desktop.jpg'); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    height: 50vh;
     width: 100%;
     margin-bottom: 12px;
+    background-color: violet;
   }
 
   .imageDiv {
-    margin: 20px;
+    background-color: violet;
+  }
+
+  .about-box {
+    font-size: 15px;
+  
+  }
+
+  .speakers {
+    background-color: yellow;
+    height: 50vh;
   }
 /*
   .imageDiv h3,
